@@ -1,4 +1,4 @@
-[x, fs]=audioread('¤Ú¤Ú.wav');
+[x, fs]=audioread('origin.wav');
 sound(x, fs);	
 
 t=(1:length(x))/fs; 

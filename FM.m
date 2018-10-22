@@ -1,7 +1,7 @@
 clc;
 close all;
 clear all;
-[x, fs]=audioread('¤Ú¤Ú.wav');
+[x, fs]=audioread('origin.wav');
 t=(1:length(x))/fs;
 am=x';
 y=cos(pi*t*90000).*am;
@@ -20,3 +20,5 @@ Xm(1,1) = Xm(1,1)/2;
 Xm = Xm/K; 
 f = (0:length(y)/2-1)*fs/length(y);
 plot(f, Xm)
+%plot (t,y) ªi¦æ¤£ÅÜ
+
